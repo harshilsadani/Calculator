@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <title>simple calculator</title>
+    
+</head>
+
+<body
+    style="background-image: url(https://static.vecteezy.com/system/resources/thumbnails/040/890/255/small/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg);">
+    <a href="#section3"></a>
+    <a class="button5" href="https://edtechmagazine.com/k12/article/2012/11/calculating-firsts-visual-history-calculators">History</a>
+    <br>
+    <a class="button5" href="https://en.wikipedia.org/wiki/Calculator">Calculator</a>
+    <br>
+    <a class="button5" href="#section 1">Jump</a> 
+    <br>
+    <a class="button5" href="https://en.wikipedia.org/wiki/Edith_Clarke">Edith Clark</a>
+    <br>
+    <a class="button5" href="https://www.bluesummitsupplies.com/blogs/resources/different-types-of-calculators-and-how-to-choose">Types of Calculator</a>
+    <center>
+        <ul>
+            <li><a href="#section 1">basic information</a></li>
+            <li><a href="#section 2"></a>calculator app</li>
+        </ul>
+        <h1>&#128512; Calculator app</h1>
+        <span><label></label></span><span><img src="logo.png" width="100" height="100">
+        </span>
+        <br><br><br><br>
+        <section id="section 2">
+            <label class="button5" for="">Enter first number</label>
+            <input type="number" id="number1">
+            <br><br>
+            <label class="button5" for="">Enter second number</label>
+            <input type="number" id="number2">
+            <br><br>
+            <button onclick="1()">1</button>
+            <button onclick="2()">2</button>
+            <button onclick="3()">3</button>
+            <br>
+            <button onclick="4()">4</button>
+            <button onclick="5()">5</button>
+            <button onclick="6()">6</button>
+            <br>
+            <button onclick="7()">7</button>
+            <button onclick="8()">8</button>
+            <button onclick="9()">9</button>
+            <br>
+            <button onclick=""></button>
+            <button onclick="0">0</button>
+            <button onclick=""></button>
+            <br>
+            <button class="button1" onclick="sum()">+</button>
+            <button class="button1" onclick="sub()">-</button>
+            <button class="button1" onclick="divide()">/</button>
+            <button class="button1" onclick="multiply()">*</button>
+            <br><br><br>
+            <label class="button3" id="result">RESULT=</label>
+            <section id="section 1">
+                <br><br><br><br><br><br><br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/LX8_z1nvqk4?si=9Jkcfr_nC1gEJnPb"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                <p>A calculator is typically a portable electronic device used to perform calculations, ranging from
+                    basic arithmetic to complex mathematics.
+
+                    The first solid-state electronic calculator was created in the early 1960s. Pocket-sized devices
+                    became available in the 1970s, especially after the Intel 4004, the first microprocessor, was
+                    developed by Intel for the Japanese calculator company Busicom. Modern electronic calculators vary
+                    from cheap, give-away, credit-card-sized models to sturdy desktop models with built-in printers.
+                    They became popular in the mid-1970s as the incorporation of integrated circuits reduced their size
+                    and cost. By the end of that decade, prices had dropped to the point where a basic calculator was
+                    affordable to most and they became common in schools.
+
+                    In addition to general-purpose calculators, there are those designed for specific markets. For
+                    example, there are scientific calculators, which include trigonometric and statistical calculations.
+                    Some calculators even have the ability to do computer algebra. Graphing calculators can be used to
+                    graph functions defined on the real line, or higher-dimensional Euclidean space. As of 2016, basic
+                    calculators cost little, but scientific and graphing models tend to cost more.[1]</p>
+    </center>
+    <style>
+        button {
+            background-color: red;
+            color: #03fcd3;
+        }
+
+        #result {
+            color: coral;
+        }
+
+        .button1 {
+            background-color: #fcb103;
+            color: black;
+        }
+
+        .button3{
+            font-size: xx-large;
+        }
+
+        .button4{
+            font-size:xx-large;
+        }
+
+        .button5{
+            font-size: larger;
+            color: crimson;
+        }
+
+        body {
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/040/890/255/small/ai-generated-empty-wooden-table-on-the-natural-background-for-product-display-free-photo.jpg);
+            background-position: center;
+            background-size: cover;
+            font-family: "Nova Round", system-ui;
+        }
+
+        p {
+            background-color: #00ebeb;
+            color: black;
+        }
+    </style>
+    <script>
+        function sum() {
+            var a =Number(document.getElementById("number1").value);
+            var b = Number(document.getElementById("number2").value);
+            var addition = a + b;
+            document.getElementById("result").innerHTML = addition;
+        }
+         function sub(){
+              var a=Number(document.getElementById("number1").value);
+              var b=Number(document.getElementById("number2").value);
+              var substraction=a-b;
+              document.getElementById("result").innerHTML=substraction;
+          }
+          function multiply(){
+              var a=Number(document.getElementById("number1").value);
+              var b=Number(document.getElementById("number2").value);
+              var multiplication=a*b;
+              document.getElementById("result").innerHTML=multiplication;
+          }
+          function divide(){
+              var a=Number(document.getElementById("number1").value);
+              var b=Number(document.getElementById("number2").value);
+              var division=a/b;
+              document.getElementById("result").innerHTML=division;
+          }
+          
+    </script>
+
+</body>
+
+</html>
